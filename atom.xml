@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-29T07:59:14.244Z</updated>
+  <updated>2022-04-02T14:07:38.242Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,57 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2022/03/29/3333333/"/>
-    <id>http://example.com/2022/03/29/3333333/</id>
-    <published>2022-03-29T07:32:14.600Z</published>
-    <updated>2022-03-29T07:59:14.244Z</updated>
-    
-    <content type="html"><![CDATA[<p>hello，this is my first blog.</p><p>and this one is a test.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;hello，this is my first blog.&lt;/p&gt;
-&lt;p&gt;and this one is a test.&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>firstblog</title>
-    <link href="http://example.com/2022/03/29/firstblog/"/>
-    <id>http://example.com/2022/03/29/firstblog/</id>
-    <published>2022-03-29T07:31:07.000Z</published>
-    <updated>2022-03-29T07:31:07.773Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
+    <title>实验一:词法分析</title>
     <link href="http://example.com/2022/03/27/hello-world/"/>
     <id>http://example.com/2022/03/27/hello-world/</id>
     <published>2022-03-27T02:04:58.240Z</published>
-    <updated>2022-03-27T02:04:58.240Z</updated>
+    <updated>2022-04-02T14:07:38.242Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>编写识别单词的词法分析程序：要求如下所示：</p><p>1、输入：txt文件（存放要分析的源程序）</p><p>2、输出：从输入的源程序中，识别出各个具有独立意义的单词，即基本保留字、标识符、常数、运算符、分隔符五大类。并依次输出各个单词的种别码及单词符号自身值。（遇到错误时可显示“Error”，然后跳过错误部分继续显示），具体的单词种别码如下图：</p><p><img src="C:\Users\张振杰\AppData\Roaming\Typora\typora-user-images\image-20220402220242035.png" alt="image-20220402220242035"></p><p>格式要求：每个单词的表示：（种别码，单词符号自身值）</p><p>提示：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">整型：(+|-|e)d1 d*|<span class="number">0</span>                 d1：<span class="number">1</span>~<span class="number">9</span>     d：<span class="number">0</span>~<span class="number">9</span></span><br><span class="line">实型：(<span class="number">0</span>|(+|-|e)d1 d*)(e|.d*)(e|e(+|-|e)(<span class="number">0</span>|d1d*))</span><br></pre></td></tr></table></figure><p>实现识别功能，具体的算法可以采用下面两种方法，自选：</p><p>方法一： “状态转换表法”又称数据中心法，是把状态转换图看作一种数据结构（状态转换表），由控制程序控制字符在其上运行，从而完成词法分析。用转换表的优点是程序短，但占存储空间多。</p><p>方法二：“直接转向法”又称程序中心法，是把状态转换图看成一个流程图，从状态转换图的初态开始，对它的每一个状态结点都编一段相应的程序。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;编写识别单词的词法分析程序：要求如下所示：&lt;/p&gt;
+&lt;p&gt;1、输入：txt文件（存放要分析的源程序）&lt;/p&gt;
+&lt;p&gt;2、输出：从输入的源程序中，识别出各个具有独立意义的单词，即基本保留字、标识符、常数、运算符、分隔符五大类。并依次输出各个单词的种别码及单词符号自身值。（遇到</summary>
       
     
     
     
+    <category term="编译原理" scheme="http://example.com/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="c语言 编译原理" scheme="http://example.com/tags/c%E8%AF%AD%E8%A8%80-%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
     
   </entry>
   
