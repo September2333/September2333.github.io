@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>示例1</title>
+    <url>/2022/04/05/%E7%A4%BA%E4%BE%8B1/</url>
+    <content><![CDATA[<p>1发的SVad准备打哈哈哈啊</p>
+]]></content>
+      <categories>
+        <category>5</category>
+      </categories>
+  </entry>
+  <entry>
     <title>实验一:词法分析</title>
     <url>/2022/03/27/hello-world/</url>
     <content><![CDATA[<p>编写识别单词的词法分析程序：要求如下所示：</p>
@@ -32,24 +41,6 @@
       </categories>
   </entry>
   <entry>
-    <title>示例1</title>
-    <url>/2022/04/05/%E7%A4%BA%E4%BE%8B1/</url>
-    <content><![CDATA[<p>1发的SVad准备打哈哈哈啊</p>
-]]></content>
-      <categories>
-        <category>5</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>示例7</title>
-    <url>/2022/04/05/%E7%A4%BA%E4%BE%8B7/</url>
-    <content><![CDATA[<p>阿嘎多花钱进入托管费的小孩</p>
-]]></content>
-      <categories>
-        <category>7</category>
-      </categories>
-  </entry>
-  <entry>
     <title>示例2</title>
     <url>/2022/04/05/%E7%A4%BA%E4%BE%8B2/</url>
     <content><![CDATA[<p>阿斯蒂芬确认提41tggfgqartrq</p>
@@ -65,6 +56,15 @@
 ]]></content>
       <categories>
         <category>2</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>示例7</title>
+    <url>/2022/04/05/%E7%A4%BA%E4%BE%8B7/</url>
+    <content><![CDATA[<p>阿嘎多花钱进入托管费的小孩</p>
+]]></content>
+      <categories>
+        <category>7</category>
       </categories>
   </entry>
 </search>
